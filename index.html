@@ -26,98 +26,118 @@
         <div class="mdl-layout__header-row">
           <span class="mdl-layout-title">Self Yummy Pizza Ordering</span>
         </div>
-      </header>
-      <main class="mdl-layout__content">
-       <h3>Welcome To Yummy Pizza Order</h3>
-      <p>Size</p>
-        <!-- List with avatar and controls -->
-        <ul class="demo-list-control mdl-list">
-  <li class="mdl-list__item">
-    <span class="mdl-list__item-primary-content">
-      <i class="material-icons  mdl-list__item-avatar">large size</i>
-      Large Pizza
-    </span>
-    <span class="mdl-list__item-secondary-action">
-      <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-checkbox-1">
-        <input type="checkbox" id="list-checkbox-1" class="mdl-checkbox__input" checked />
-      </label>
-    </span>
-  </li>
-  
- <ul class="demo-list-control mdl-list">
-  <li class="mdl-list__item">
-    <span class="mdl-list__item-primary-content">
-      <i class="material-icons  mdl-list__item-avatar">extra large pizza</i>
-      Extra-large Pizza
-    </span>
-    <span class="mdl-list__item-secondary-action">
-      <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-checkbox-2">
-        <input type="checkbox" id="list-checkbox-2" class="mdl-checkbox__input" checked />
-      </label>
-    </span>
-  </li>
-   <p>Toppings</p>
-        <!-- List with avatar and controls -->
-        <ul class="demo-list-control mdl-list">
-  <li class="mdl-list__item">
-    <span class="mdl-list__item-primary-content">
-      <i class="material-icons  mdl-list__item-avatar">large size</i>
-      Pepperoni
-    </span>
-    <span class="mdl-list__item-secondary-action">
-      <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-checkbox-3">
-        <input type="checkbox" id="list-checkbox-3" class="mdl-checkbox__input" checked />
-      </label>
-    </span>
-  </li>
-  
- <ul class="demo-list-control mdl-list">
-  <li class="mdl-list__item">
-    <span class="mdl-list__item-primary-content">
-      <i class="material-icons  mdl-list__item-avatar">extra large pizza</i>
-      Mushrooms
-    </span>
-    <span class="mdl-list__item-secondary-action">
-      <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-checkbox-4">
-        <input type="checkbox" id="list-checkbox-4" class="mdl-checkbox__input" checked />
-      </label>
-    </span>
-  </li>
+    </header>
+       <main class="mdl-layout__content">
+        <p>Please enter your employment information:</p>
+       <!-- List with avatar and controls -->
+<style>
+.demo-list-control {
+  width: 300px;
+}
 
-    <ul class="demo-list-control mdl-list">
-  <li class="mdl-list__item">
-    <span class="mdl-list__item-primary-content">
-      <i class="material-icons  mdl-list__item-avatar">extra large pizza</i>
-      Green Peppers
-    </span>
-    <span class="mdl-list__item-secondary-action">
-      <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-checkbox-5">
-        <input type="checkbox" id="list-checkbox-5" class="mdl-checkbox__input" checked />
-      </label>
-    </span>
-  </li>
+.demo-list-radio {
+  display: inline;
+}
+</style>
 
-       <ul class="demo-list-control mdl-list">
+<ul class="demo-list-control mdl-list">
   <li class="mdl-list__item">
     <span class="mdl-list__item-primary-content">
-      <i class="material-icons  mdl-list__item-avatar">extra large pizza</i>
-      Onions
+      <i class="material-icons  mdl-list__item-pizza">pizza</i>
+      Large Pizza ($6.00)
     </span>
     <span class="mdl-list__item-secondary-action">
-      <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-checkbox-6">
-        <input type="checkbox" id="list-checkbox-6" class="mdl-checkbox__input" checked />
+      <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect" for="list-option-1">
+        <input type="radio" id="list-option-1" class="mdl-radio__button" name="options" value="1" checked />
       </label>
     </span>
   </li>
+  <li class="mdl-list__item">
+    <span class="mdl-list__item-primary-content">
+      <i class="material-icons  mdl-list__item-pizza">pizza</i>
+      Extra Large Pizza ($10.00)
+    </span>
+    <span class="mdl-list__item-secondary-action">
+      <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect" for="list-option-2">
+        <input type="radio" id="list-option-2" class="mdl-radio__button" name="options" value="1" checked />
+      </label>
+      
+    </span>
+  </li>
+</ul>
+         <p2>Toppings</p2>
+         <!-- List with avatar and controls -->
+<style>
+.demo-list-control {
+  width: 300px;
+}
+
+.demo-list-radio {
+  display: inline;
+}
+</style>
+
+<ul class="demo-list-control mdl-list">
+  <li class="mdl-list__item">
+    <span class="mdl-list__item-primary-content">
+      <i class="material-icons  mdl-list__item-pizza">pizza</i>
+      Pepperoni ($3.35)
+    </span>
+    <span class="mdl-list__item-secondary-action">
+      <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect" for="list-option-3">
+        <input type="radio" id="list-option-3" class="mdl-radio__button" name="options" value="1" checked />
+      </label>
+    </span>
+  </li>
+  <li class="mdl-list__item">
+    <span class="mdl-list__item-primary-content">
+      <i class="material-icons  mdl-list__item-pizza">pizza</i>
+      Green Peppers ($2.50)
+    </span>
+    <span class="mdl-list__item-secondary-action">
+      <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect" for="list-option-4">
+        <input type="radio" id="list-option-4" class="mdl-radio__button" name="options" value="1" checked />
+      </label>
+      
+    </span>
+  </li>
+    <li class="mdl-list__item">
+    <span class="mdl-list__item-primary-content">
+      <i class="material-icons  mdl-list__item-pizza">pizza</i>
+      Onions ($1.75)
+    </span>
+    <span class="mdl-list__item-secondary-action">
+      <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect" for="list-option-5">
+        <input type="radio" id="list-option-5" class="mdl-radio__button" name="options" value="1" checked />
+      </label>
+      
+    </span>
+  </li>
+    <li class="mdl-list__item">
+    <span class="mdl-list__item-primary-content">
+      <i class="material-icons  mdl-list__item-pizza">pizza</i>
+      Mushrooms ($1.00)
+    </span>
+    <span class="mdl-list__item-secondary-action">
+      <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect" for="list-option-6">
+        <input type="radio" id="list-option-6" class="mdl-radio__button" name="options" value="1" checked />
+      </label>
+      
+    </span>
+  </li>
+</ul>
+         
         <!-- Raised button with ripple -->
         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
 onclick="pay()">
           Pay
         </button>
-        <br />
+        <br>
+        <br>
         <p>
           <div id="answers">
-            <div id="temperature"></div>
+            <div id="take-home-salary"></div>
+            <div id="government-tax"></div>
           </div>
         </p>
       </main>
