@@ -9,53 +9,63 @@
  * Check servie worker.
  */
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/ICS2O-Unit6-01-PWA/sw.js", {
-    scope: "/ICS2O-Unit6-01-PWA/",
+  navigator.serviceWorker.register("/ICS2O-Assignment4-HTML/sw.js", {
+    scope: "/ICS2O-Assignment4-HTML/",
   })
 }
 
-const priceSmall = 4.00;
-const priceMedium = 5.00;
-const priceLarge = 7.00;
-const priceToppings = 0.50; 
-const pst = .07;
-const gst = .07
-let subtotal = 0;
+/**
+ * This function calculates the pizzas total price
+ */
 
-function calculateSize(element) {
-  if (element == null) {
-    return;
+ function buttonClicked() {
+  var pizzaPrice = 0
+  var toppingPrice = 0
+  var totalPrice = 0
+  var tax = 0
+
+
+  var largeSize = document.getElementById("largeSize")
+  var extraLagreSize = document.getElementById("extraLagreSize")
+
+  if (largeSize.checked == true) {
+    pizzaPrice = 6.00
+    
   }
 
-  switch(element.value) {
-    case "10":
-      subtotal = priceSmall;
-      break;
-    case "12":
-      subtotal = priceMedium;
-      break;
-    case "15":
-      subtotal = priceLarge;
-      break;
+  if (extraLagreSize.checked == true) {
+    pizzaPrice = 10.00
   }
-    recalculateTotal();
-}
 
-function toppingOptionPrice(element) {
-  if (element.checked) {
-      subtotal += priceToppings;
-  } else {
-      subtotal -= priceToppings;
+
+  var topping1 = document.getElementById("topping1")
+  var topping2 = document.getElementById("topping2")
+  var topping3 = document.getElementById("topping3")
+  var topping4 = document.getElementById("topping4")
+
+
+  if (topping1.checked == true) {
+    toppingPrice = 1.00
   }
-    recalculateTotal();
-}
 
-function recalculateTotal() {
-  let pstToPay = subtotal * pst;
-  let gstToPay = subtotal * gst;
-  let total = subtotal + pstToPay + gstToPay;
-  document.getElementById("subtotal").value = subtotal;
-  document.getElementById("pstToPay").value = pstToPay;
-  document.getElementById("gstToPay").value = gstToPay;
-  document.getElementById("total").value = total;
+  if (topping2.checked == true) {
+    toppingPrice = 1.75
+  }
+
+  if (topping3.checked == true) {
+    toppingPrice = 2.50
+  }
+
+  if (topping4.checked == true) {
+    toppingPrice = 3.35
+  }
+
+
+  tax = (pizzaPrice + toppingPrice) * 0.13
+  totalPrice = tax + (pizzaPrice + toppingPrice)
+
+  document.getElementById("order").innerHTML =
+  "Your pizza will cost  $" + totalPrice.toFixed(2)
+
+  console.log(totalPrice)
 }
