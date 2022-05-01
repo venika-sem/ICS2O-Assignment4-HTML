@@ -17,7 +17,6 @@ if (navigator.serviceWorker) {
 /**
  * This function calculates the pizzas total price
  */
-
  function buttonClicked() {
   var pizzaPrice = 0
   var toppingPrice = 0
