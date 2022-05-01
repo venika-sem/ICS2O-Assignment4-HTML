@@ -5,8 +5,5 @@
 
 body {
   text-align: center;
-}
-
-mdl-button {
-  font-size: 15px;
+  background-color: #ff8c00;
 }
